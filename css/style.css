@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900');
+
+body {
+    background: #ffffff;
+    font-family: 'Lato', sans-serif;
+    line-height: 21px;
+    color: #636e7b;
+}
+
+input,select,textarea {
+    font-family: 'Lato', sans-serif;
+    color: #636e7b;
+}
+
+
+a {
+    color: #1a75d2;
+    text-decoration: none;
+}
+
+a:focus, a:active { outline: none; }
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Lato', sans-serif;
+}
+
+strong {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+	background-color: transparent;
+}
+
+
+.mainpanel {
+    background: #ffffff;
+}
+
+.contentpanel {
+    padding: 20px;
+    position: relative;
+}
+
+.contentpanel .row{
+  margin:0px;
+}
+
+.contentpanel .col-cust{
+    padding:0px;
+}
+
+.nav-email {
+    overflow-y: auto;
+    max-height: 600px;
+    height: 600px;
+    background: #f1f1f1;
+}
+.nav-email li {
+    background: #f1f1f1;
+    border-bottom: 1px solid #e4e7ea;
+}
+
+.nav-email>li>a:hover {
+    background: #313d48;
+    color: #fff;
+}
+
+.nav-email>li>a:hover h4 {
+    color: #27dbd3;
+}
+
+
+.email-list>.pull-left {
+    margin-right: 10px;
+}
+
+.email-img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #9a9a9a;
+}
+
+.email-list h4 {
+    margin: 0;
+    font-size: 14px;
+    line-height: normal;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #1a75d2;
+}
+
+.email-list .email-summary {
+    margin: 2px 0 0 0;
+}
+
+.contentpanel .email-detail{
+	min-height: 600px;
+	max-height: 600px;
+	overflow-y: auto;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	background: border-box;
+}
+
+.email-heading {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fcfcfc;
+}
+
+.top-header {
+    margin: 10px 0px 0px;
+}
+
+.top-header .srch-top {
+    padding: 0;
+    list-style-type: none;
+}
+
+#top-navbar-collapse .navbar-nav{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	float: none;
+}
+
+#top-navbar-collapse .navbar-nav>li{
+	display:inline-block;
+	float: none;
+}
+
+.cstm_inp {
+    border-radius: 0px;
+}
+
+ul.aside-cntnt{
+	list-style-type: none;
+	padding: 0px;
+	display: inline-block;
+	position: relative;
+	max-height: 600px;
+	overflow-y: auto;
+}
+
+ul.aside-cntnt li{
+    display: inline-block;
+    width: 46%;
+    float: left;
+    margin: 2%;
+    text-align: center;
+}
+
+.side-img {
+    width: 112px;
+    height: 112px;
+    background: #f1f1f1;
+    padding: 10px;
+}
+
+.side-img img{
+    margin: 0 auto;
+    text-align: center;
+    max-height: 50px;
+    margin-bottom: 15px;	
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #000;
+    height: 2px;
+}
+
+.srch-top .btn {
+    background: #303d49;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.srch-top .form-inline {
+    text-align: center;
+}
+
+ul.rel-srch {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.rel-srch li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+@media (min-width: 360px) and (max-width: 419px) {
+	.cstm_inp {
+		width: 75% !important;
+	}
+}
+
+
+@media (min-width:768px) {
+	.aside-top{
+		display:block;
+	}
+	
+.cstm_inp {
+    border-radius: 0px;
+    width: 500px !important;
+}
+
+.srch-top .form-inline .form-group {
+    display: block;
+}
+
+
+}
+
+@media (max-width: 767px) {
+	.col-cust1{
+		display:none;
+	}
+	
+.cstm_inp {
+display: inline-block;
+    float: left;
+    margin-right: 10px;
+    width: 80%;
+}
+
+.top-header .srch-top {
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.srch-top li{
+	text-align: center;
+}
+
+
+.side-img {
+	width: auto;
+    height: 112px;
+    background: #f1f1f1;
+    padding: 10px;
+}
+
+.aside-top {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    right: 0;
+    background: #303d49;
+    text-align: center;
+    display: none;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+.cstm_inp {
+	width: 300px !important;
+}
+
+.side-img {
+	width: auto;
+    height: 112px;
+    background: #f1f1f1;
+    padding: 10px;
+}
+
+
+}
