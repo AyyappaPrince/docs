@@ -172,6 +172,10 @@ ul.aside-cntnt li{
     background-color: #000;
     height: 2px;
 }
+button.navbar-toggler{
+    float: right;
+    padding: 0px;
+}
 
 .srch-top .btn {
     background: #303d49;
@@ -179,9 +183,66 @@ ul.aside-cntnt li{
     border-radius: 3px;
 }
 
-.srch-top .form-inline {
+.srch-top .form-inline-3 {
     text-align: center;
 }
+
+.form-group-3{
+    margin-bottom: 15px;
+}
+
+.form-control-3{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.srch-btn{
+    font-size: 14px;
+}
+
+.media-body-3{
+    display: table-cell;
+    vertical-align: top;
+    overflow: hidden;
+    zoom: 1;
+}
+.pull-left{
+    float: left;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px !important;
+}
+.panel-body {
+    padding: 15px;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-default {
+    border-color: #ddd;
+}
+
 
 ul.rel-srch {
     padding: 0;
@@ -209,6 +270,9 @@ ul.rel-srch {
 .cstm_inp {
     border-radius: 0px;
     width: 500px !important;
+        display: inline-block;
+    width: auto;
+    vertical-align: middle;
 }
 
 .srch-top .form-inline .form-group {
@@ -227,7 +291,7 @@ ul.rel-srch {
 display: inline-block;
     float: left;
     margin-right: 10px;
-    width: 80%;
+    width: 65%;
 }
 
 .top-header .srch-top {
