@@ -307,7 +307,7 @@
     <script>
     $(document).ready(function(){
         $('.nav-link').on("click",function(){
-            var width=$(window).width();
+            var width=window.innerWidth;
             console.log(width);
             if(width <= 768){
                 $('#email-content').show();
