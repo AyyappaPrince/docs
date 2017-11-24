@@ -53,6 +53,9 @@ strong {
     padding:0px;
 }
 
+.email-flex{
+    display:flex;
+}
 .nav-email {
     overflow-y: auto;
     max-height: 600px;
@@ -226,7 +229,7 @@ button.navbar-toggler{
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 10px 15px !important;
+    padding-left: 10px !important;
 }
 .panel-body {
     padding: 15px;
@@ -266,6 +269,9 @@ ul.rel-srch {
 	.aside-top{
 		display:block;
 	}
+    .show-list{
+        display: none !important;
+    }
 	
 .cstm_inp {
     border-radius: 0px;
@@ -275,10 +281,12 @@ ul.rel-srch {
     vertical-align: middle;
 }
 
-.srch-top .form-inline .form-group {
+.srch-top .form-inline .form-group{
     display: block;
 }
-
+#email-content,#email-list {
+    display: block !important;
+}
 
 }
 
@@ -286,7 +294,15 @@ ul.rel-srch {
 	.col-cust1{
 		display:none;
 	}
-	
+	.email-flex{
+    display:block;
+}
+.show-list{
+    display: block;
+    float:right;
+    margin-top: -40px;
+    padding: 2px;
+}
 .cstm_inp {
 display: inline-block;
     float: left;

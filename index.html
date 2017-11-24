@@ -63,7 +63,9 @@
       	<div class="mainpanel">    
     		<div class="contentpanel panel-email">
     			<div class="row">
-    				<div class="col-md-4 col-lg-3 col-xl-2 col-cust">
+                    <router-outlet></router-outlet>
+                    <email class="col-md-12 col-lg-9 col-xl-10 email-flex">
+    				<div id="email-list" class="col-md-4 col-lg-4 col-xl-3 col-cust">
 						<ul class="nav navbar-nav nav-email">
 							<li class="nav-item">
 							<a href="#" class="nav-link">								
@@ -193,7 +195,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-8 col-lg-6 col-xl-8  col-cust col-cust1">
+					<div class="col-md-8 col-lg-8 col-xl-9  col-cust col-cust1" id="email-content" >
 						<div class="panel panel-default email-detail">
 							<div class="email-heading">
 									<div class="email-list">
@@ -206,6 +208,7 @@
                                 		    <p class="email-summary">Mail Description</p>
                                 		</div>
                             		</div>
+                                    <button type="button" class="btn btn-primary show-list">Show List</button>
 							</div>
 							<div class="panel-body">
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -215,8 +218,8 @@
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 							</div>
 						</div>
-					</div>	
-					
+					</div>
+					</email>
 					<div class="col-lg-3 col-xl-2  collapse navbar-collapse aside-top">
 						<ul class="aside-cntnt">
 							<li>
@@ -301,5 +304,22 @@
     <script src="js/popper.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap4.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.nav-link').on("click",function(){
+            var width=$(window).width();
+            console.log(width);
+            if(width <= 768){
+                $('#email-content').show();
+                 $('#email-list').hide();
+            }
+        });
+        $('.show-list').on("click",function(){
+             $('#email-content').hide();
+             $('#email-list').show();
+        })
+    });
+    
+    </script>
   </body>
 </html>
